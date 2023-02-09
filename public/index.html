@@ -1,12 +1,438 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>React App</title>
+    <link
+      data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+      rel="icon"
+      sizes="192x192"
+      href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="estilos.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Instagram</title>
   </head>
+
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div class="root"></div>
+    <!--Início cabeçalho-->
+    <div class="cabecalho">
+      <div class="topo">
+        <div class="topo-esquerdo">
+          <a href="index.html">
+            <ion-icon name="logo-instagram"></ion-icon>
+            <img src="assets/logo.png" />
+          </a>
+        </div>
+        <div>
+          <input
+            autocapitalize="none"
+            placeholder="Pesquisar"
+            type="text"
+            value=""
+          />
+        </div>
+        <div class="topo-direito">
+          <ion-icon name="paper-plane-outline"></ion-icon>
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="compass-outline"></ion-icon>
+          <ion-icon name="person-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <div class="cabecalho-mobile">
+      <a href="index.html">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <img src="assets/logo.png" width="103px" height="29px" />
+      <ion-icon name="paper-plane-outline"></ion-icon>
+    </div>
+    <!--Fim cabeçalho-->
+
+    <div class="conteudo">
+      <div class="principal">
+        <!--Início stories-->
+        <div class="stories">
+          <ion-icon name="chevron-forward-circle"></ion-icon>
+          <a href="">
+            <div class="background-stories">
+              <img src="assets/stories/LOTR.jpg" alt="lotf" />
+            </div>
+            <h2>lotf</h2>
+          </a>
+          <a href="">
+            <div class="background-stories">
+              <img src="assets/stories/CODA.jfif" alt="coda" />
+            </div>
+            <h2>coda</h2>
+          </a>
+          <a href="">
+            <div class="background-stories">
+              <img src="assets/stories/avengers.jpg" alt="avengers" />
+            </div>
+            <h2>avengers</h2>
+          </a>
+          <a href="">
+            <div class="background-stories">
+              <img src="assets/stories/interestelar.jpg" alt="interestelar" />
+            </div>
+            <h2>interestelar</h2>
+          </a>
+          <a href="">
+            <div class="background-stories">
+              <img src="assets/stories/your-name.jfif" alt="yourname" />
+            </div>
+            <h2>yourname</h2>
+          </a>
+          <a href="">
+            <div class="background-stories">
+              <img src="assets/stories/the-conjuring.jpg" alt="conjuring" />
+            </div>
+            <h2>conjuring</h2>
+          </a>
+          <a href="">
+            <div class="background-stories">
+              <img
+                src="assets/stories/schindler's-list.jfif"
+                alt="schindler"
+              />
+            </div>
+            <h2>schindler</h2>
+          </a>
+          <a href="">
+            <div class="background-stories">
+              <img
+                src="assets/stories/o-silencio-dos-inocentes.jpg"
+                alt="inocentes"
+              />
+            </div>
+            <h2>inocentes</h2>
+          </a>
+          <a href="">
+            <div class="background-stories">
+              <img
+                src="assets/stories/pride-and-prejudice.jpg"
+                alt="prejucide"
+              />
+            </div>
+            <h2>prejucide</h2>
+          </a>
+        </div>
+        <!--Fim stories-->
+
+        <!--Início postagens-->
+        <div class="feed">
+          <div class="post">
+            <div class="seguir">
+              <a href="https://www.instagram.com/leomessi/">
+                <img src="assets/seguir/messi.jpg" />
+                <h1>leomessi</h1>
+              </a>
+              <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </div>
+            <div>
+              <img src="assets/post1.png" />
+            </div>
+            <div>
+              <div>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </div>
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div>
+              <div>
+                <img src="assets/seguir/mbappe.jfif" alt="mbappe" />
+                <p>
+                  Curtido por <span>k.mbappe</span> e
+                  <span>outras 71.250.789 pessoas</span>
+                </p>
+              </div>
+              <div>
+                <p><span>leomessi</span> CAMPEONES DEL MUNDO!!!!!!! 🌎🏆</p>
+              </div>
+              <div>
+                <a href=""><h2>Ver todos os 1.887.998 comentários</h2></a>
+              </div>
+              <div class="comentarios">
+                <p><span>avengers</span> Our HERO</p>
+                <button class="botao">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+              </div>
+              <div class="comentarios">
+                <p><span>wesleymichaelps</span> The best</p>
+                <button class="botao">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="comentar">
+              <ion-icon name="happy-outline"></ion-icon>
+              <input
+                autocapitalize="none"
+                placeholder="Adicione um comentário..."
+                type="text"
+                value=""
+              />
+              <button>Publicar</button>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="seguir">
+              <a href="https://www.instagram.com/hogwartslegacy/">
+                <img src="assets/post2.jpg" />
+                <h1>hogwartslegacy</h1>
+              </a>
+              <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </div>
+            <div>
+              <img src="assets/post2.jpg" />
+            </div>
+            <div>
+              <div>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </div>
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div>
+              <div>
+                <img src="assets/seguir/watson.jpg" alt="watson" />
+                <p>
+                  Curtido por <span>user_1</span> e
+                  <span>outras 1.250.789 pessoas</span>
+                </p>
+              </div>
+              <div>
+                <p><span>hogwartslegacy</span> Vem ai. Dia 10 de fevereiro</p>
+              </div>
+              <div>
+                <a href=""><h2>Ver todos os 489.998 comentários</h2></a>
+              </div>
+              <div class="comentarios">
+                <p><span>wesleymichaelps</span> Precisooooo</p>
+                <button class="botao">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="comentar">
+              <ion-icon name="happy-outline"></ion-icon>
+              <input
+                autocapitalize="none"
+                placeholder="Adicione um comentário..."
+                type="text"
+                value=""
+              />
+              <button>Publicar</button>
+            </div>
+          </div>
+
+          <div class="post">
+            <div class="seguir">
+              <a href="">
+                <img src="assets/post3.jpeg" />
+                <h1>dev.depressão</h1>
+              </a>
+              <ion-icon name="ellipsis-horizontal"></ion-icon>
+            </div>
+            <div>
+              <img src="assets/post3.jpeg" />
+            </div>
+            <div>
+              <div>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </div>
+              <ion-icon name="bookmark-outline"></ion-icon>
+            </div>
+            <div>
+              <div>
+                <img src="assets/stories/driven.png" alt="driven" />
+                <p>
+                  Curtido por <span>driven</span> e
+                  <span>outras 250.789 pessoas</span>
+                </p>
+              </div>
+              <div>
+                <p><span>dev.depressão</span> Quem nunca?</p>
+              </div>
+              <div>
+                <a href=""><h2>Ver todos os 87.998 comentários</h2></a>
+              </div>
+
+              <div class="comentarios">
+                <p><span>wesleymichaelps</span> Sofro!!</p>
+                <button class="botao">
+                  <ion-icon name="heart-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="comentar">
+              <ion-icon name="happy-outline"></ion-icon>
+              <input
+                autocapitalize="none"
+                placeholder="Adicione um comentário..."
+                type="text"
+                value=""
+              />
+              <button>Publicar</button>
+            </div>
+          </div>
+        </div>
+        <!--Fim postagens-->
+      </div>
+
+      <!--Início sidebar-->
+      <div class="sidebar">
+        <div class="perfil">
+          <div>
+            <a href="https://www.instagram.com/wesleymichaelps/">
+              <img src="assets/perfil.jpeg" />
+            </a>
+          </div>
+          <div class="texto">
+            <a href="https://www.instagram.com/wesleymichaelps/">
+              <h1>wesleymichaelps</h1>
+            </a>
+            <ion-icon name="pencil"></ion-icon>
+          </div>
+        </div>
+
+        <div class="suggestions">
+          <div><h2>Sugestões para você</h2></div>
+          <div>
+            <a href=""><h2>Ver tudo</h2></a>
+          </div>
+        </div>
+
+        <!--Início de perfis para sugestão-->
+        <div class="seguir">
+          <div class="perfis">
+            <div>
+              <a href="https://www.instagram.com/leomessi/">
+                <img src="assets/seguir/messi.jpg" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/leomessi/">
+                <h1>leomessi</h1>
+              </a>
+              <h2>Segue você</h2>
+            </div>
+          </div>
+          <div class="perfis">
+            <a href=""><h2>Seguir</h2></a>
+          </div>
+        </div>
+        <div class="seguir">
+          <div class="perfis">
+            <div>
+              <a href="https://www.instagram.com/charles_leclerc/">
+                <img src="assets/seguir/charles.jfif" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/charles_leclerc/">
+                <h1>charles_leclerc</h1>
+              </a>
+              <h2>Segue você</h2>
+            </div>
+          </div>
+          <div class="perfis">
+            <a href=""><h2>Seguir</h2></a>
+          </div>
+        </div>
+        <div class="seguir">
+          <div class="perfis">
+            <div>
+              <a href="https://www.instagram.com/jennaortega/">
+                <img src="assets/seguir/wednesday.jfif" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/jennaortega/">
+                <h1>jennaortega</h1>
+              </a>
+              <h2>Segue você</h2>
+            </div>
+          </div>
+          <div class="perfis">
+            <a href=""><h2>Seguir</h2></a>
+          </div>
+        </div>
+        <div class="seguir">
+          <div class="perfis">
+            <div>
+              <a href="https://www.instagram.com/k.mbappe/">
+                <img src="assets/seguir/mbappe.jfif" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/k.mbappe/">
+                <h1>k.mbappe</h1>
+              </a>
+              <h2>Segue você</h2>
+            </div>
+          </div>
+          <div class="perfis">
+            <a href=""><h2>Seguir</h2></a>
+          </div>
+        </div>
+        <div class="seguir">
+          <div class="perfis">
+            <div>
+              <a href="https://www.instagram.com/emmawatson/">
+                <img src="assets/seguir/watson.jpg" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.instagram.com/emmawatson/">
+                <h1>emmawatson</h1>
+              </a>
+              <h2>Segue você</h2>
+            </div>
+          </div>
+          <div class="perfis">
+            <a href=""><h2>Seguir</h2></a>
+          </div>
+        </div>
+        <!--Fim de perfis para sugestão-->
+
+        <div class="lateral-base">
+          <p>
+            Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
+            Localizações • Contas mais relevantes • Hashtags • Idioma
+          </p>
+          <br />
+          <p>&copy; 2021 INSTAGRAM DO FACEBOOK</p>
+        </div>
+      </div>
+      <!--Fim sidebar-->
+    </div>
+
+    <div class="barra-inferior">
+      <ion-icon name="home"></ion-icon>
+      <ion-icon name="search-outline"></ion-icon>
+      <ion-icon name="add-circle-outline"></ion-icon>
+      <ion-icon name="heart-outline"></ion-icon>
+      <ion-icon name="person-outline"></ion-icon>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>
