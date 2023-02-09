@@ -7,12 +7,10 @@ body {
   background-color: #fafafa;
 }
 h1 {
-  font-weight: 500;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
-  font-style: normal;
   color: #262626;
-  padding-bottom: 6px;
 }
 h2 {
   font-style: normal;
@@ -34,13 +32,15 @@ h2 {
   position: fixed;
   display: none;
 }
-.cabecalho-mobile ion-icon {
-  color: #000000;
+.cabecalho-mobile .icons {
   font-size: 20px;
 }
 .cabecalho {
   border-bottom: 1px solid #dbdbdb;
   background-color: #ffffff;
+}
+.icons{
+  color: #000000;
 }
 .topo {
   box-sizing: border-box;
@@ -55,11 +55,10 @@ h2 {
   display: flex;
   align-items: center;
 }
-.topo-esquerdo ion-icon {
-  font-size: 20px;
+.topo-esquerdo .icons {
+  font-size: 30px;
   padding-right: 10px;
   border-right: 1px solid #dbdbdb;
-  color: #000000;
 }
 .topo-esquerdo img {
   width: 103px;
@@ -76,17 +75,17 @@ h2 {
 }
 .topo-direito {
   display: flex;
+  justify-content: space-between;
   width: 148px;
   align-items: center;
 }
-.topo-direito ion-icon {
+.topo-direito .icons {
   width: 30px;
-  padding-left: 15px;
   cursor: pointer;
   font-size: 20px;
 }
-.topo-direito ion-icon:hover {
-  font-size: 25px;
+.topo-direito .icons:hover {
+  font-size: 23px;
 }
 
 /**** Formatação do conteúdo ****/
@@ -130,10 +129,10 @@ h2 {
   width: 66px;
   height: 66px;
   border-radius: 33px;
-  background-image: url("arquivos/stories_background.jpg");
+  background-image: url("./assets/stories_background.jpg");
   background-size: 66px;
 }
-.stories ion-icon {
+.stories .icons {
   font-size: 26px;
   position: absolute;
   right: 8px;
@@ -153,27 +152,28 @@ h2 {
   margin-bottom: 60px;
   background-color: #ffffff;
 }
-.seguir {
+.user {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 58px;
 }
-.seguir img {
+.user img {
   width: 32px;
   height: 32px;
   object-fit: cover;
   border-radius: 16px;
   margin-right: 11px;
 }
-.seguir > a {
+.user > a {
   display: flex;
   align-items: center;
   padding-left: 17px;
 }
-.seguir a > h1 {
+.user a > h1 {
   padding: 5px;
 }
-.seguir ion-icon {
+.user .icons {
   margin: 20px;
 }
 /*Div 2: postagem principal*/
@@ -198,16 +198,16 @@ h2 {
   justify-content: space-between;
   padding-right: 10px;
 }
-.post > div:nth-child(3) ion-icon {
+.post > div:nth-child(3) .icons {
   padding-left: 10px;
   padding-top: 12px;
-  font-size: 20px;
+  font-size: 2em;
   color: #000000;
 }
-.post > div:nth-child(3) ion-icon:hover {
+.post > div:nth-child(3) .icons:hover {
   color: #8a8888;
 }
-/*Div 4: Espaço das curtidas e comentários */
+/*Div 4: Espaço das curtidas*/
 .post > div:nth-child(4) {
   padding: 10px 12px 5px 12px;
 }
@@ -229,9 +229,9 @@ h2 {
   line-height: 16px;
 }
 .post > div:nth-child(4) span {
-  font-weight: 500;
+  font-weight: 700;
 }
-.post > div:nth-child(4) h2 {
+/*.post > div:nth-child(4) h2 {
   color: #9e9c9c;
 }
 .comentarios {
@@ -256,7 +256,7 @@ h2 {
   padding: 15px 0;
   border-top: 1px solid #dbdbdb;
 }
-.comentar ion-icon {
+.comentar .icons {
   padding: 0 10px;
 }
 .comentar input {
@@ -273,7 +273,7 @@ h2 {
 .comentar button:hover {
   color: #0095f6;
   transition: 0.3s;
-}
+}*/
 
 /**** Conteúdo lateral ****/
 .sidebar {
@@ -297,16 +297,19 @@ h2 {
 .texto{
   display: flex;
 }
-.texto ion-icon{
+.texto .icons{
   padding-left: 5px;
 }
-
+.sidebar h2 {
+  font-weight: 500;
+  color: #8e8e8e;
+}
 .suggestions {
   display: flex;
   justify-content: space-between;
 }
 .suggestions a h2 {
-  color: #262626;
+  font-weight: 500;
 }
 .perfis {
   display: flex;
@@ -332,6 +335,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  padding: 0 20px;
   bottom: 0;
   width: 100%;
   height: 54px;
@@ -339,8 +343,7 @@ h2 {
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
 }
-.barra-inferior ion-icon {
-  padding: 0 20px;
+.barra-inferior .icons {
   font-size: 20px;
 }
 
@@ -384,7 +387,7 @@ h2 {
     overflow: auto;
   }
   ::-webkit-scrollbar,
-  .stories ion-icon,
+  .stories .icons,
   .cabecalho {
     display: none;
   }
