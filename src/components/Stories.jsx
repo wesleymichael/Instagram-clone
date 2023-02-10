@@ -20,7 +20,7 @@ export default function Stories(){
             <IoChevronForwardCircle className="icons" />
             {stories.map( (story) => (
                 <a href="">
-                    <div class="background-stories">
+                    <div className="background-stories">
                         <img src={story.src} alt={story.nome}/>
                     </div>
                     <h2>{story.nome}</h2>

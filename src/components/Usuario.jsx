@@ -1,18 +1,36 @@
+import { useState } from "react";
 import { IoPencilOutline } from "react-icons/io5";
 
 export default function Usuario(props){
+    const [userName, setNewUserName] = useState(props.username);
+    const [imgPerfil, setImgPerfil] = useState(props.img);
+
+    function mudarUserName(){
+        const novoUserName = prompt('Digite o novo user name:');
+        if(novoUserName.trim() != ''){
+            setNewUserName(novoUserName);
+        }
+    }
+
+    function mudarImgPerfil(){
+        const novaImgPerfil = prompt('Digite a nova url para foto do perfil');
+        if(novaImgPerfil.trim() != ''){
+            setImgPerfil(novaImgPerfil);
+        }
+    }
+
     return (
-        <div class="perfil">
+        <div className="perfil">
             <div>
-                <a href={props.linkperfil}>
-                    <img src={props.img} />
+                <a href="#">
+                    <img src={imgPerfil} onClick={mudarImgPerfil} />
                 </a>
             </div>
-            <div class="texto">
+            <div className="texto">
                 <a href={props.linkperfil}>
-                    <h1>{props.username}</h1>
+                    <h1>{userName}</h1>
                 </a>
-                <IoPencilOutline />
+                <IoPencilOutline onClick={mudarUserName} className="icons"/>
             </div>
         </div>
     );

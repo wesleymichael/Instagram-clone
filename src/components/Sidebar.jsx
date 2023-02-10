@@ -17,15 +17,9 @@ export default function Sidebar(){
     );
 }
 
-const usuario = {
-    username: 'wesleymichaelps',
-    img: 'assets/perfil.jpeg',
-    linkperfil: 'https://www.instagram.com/wesleymichaelps/',
-};
-
 function Rodape(){
     return (
-        <div class="lateral-base">
+        <div className="lateral-base">
             <p>
                 Sobre • Ajuda • Imprensa • API • Carreiras • Privacidade • Termos •
                 Localizações • Contas mais relevantes • Hashtags • Idioma

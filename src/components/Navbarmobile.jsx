@@ -3,7 +3,7 @@ import { IoPaperPlaneOutline } from "react-icons/io5";
 
 export default function Navbarmobile(){
     return (
-    <div class="cabecalho-mobile">
+    <div className="cabecalho-mobile">
         <a href="index.html">
             <FaInstagram className="icons"/>
         </a>

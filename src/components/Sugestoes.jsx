@@ -33,8 +33,8 @@ export default function Sugestoes(){
         <>
             <Topo />
             {sugestoes.map( (item) => (
-                <div class="user">
-                    <div class="perfis">
+                <div className="user">
+                    <div className="perfis">
                         <div>
                             <a href={item.linkperfil}>
                                 <img src={item.img} />
@@ -57,7 +57,7 @@ export default function Sugestoes(){
 
 function Topo(){
     return (
-        <div class="suggestions">
+        <div className="suggestions">
             <div>
                 <h2>Sugestões para você</h2>
             </div>
@@ -72,7 +72,7 @@ function Topo(){
 
 function Seguir(){
     return (
-        <div class="perfis">
+        <div className="perfis">
             <a href="">
                 <h2>Seguir</h2>
             </a>

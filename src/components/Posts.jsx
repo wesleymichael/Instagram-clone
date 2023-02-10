@@ -44,7 +44,7 @@ export default function Posts(){
         <div className="feed">
             {post.map( (p) => (
             <div className="post">
-                <div class="user">
+                <div className="user">
                     <a href={p.linkperfil}>
                         <img src={p.user} />
                         <h1>{p.nome}</h1>
