@@ -1,6 +1,4 @@
 import { useState } from "react";
-import {FaInstagram, FaRegCompass } from "react-icons/fa";
-import { IoHeartOutline, IoPaperPlaneOutline, IoPersonOutline } from "react-icons/io5";
 
 export default function Navbar(){
     
@@ -15,7 +13,7 @@ export default function Navbar(){
         <div className="topo">
             <div className="topo-esquerdo">
                 <a href="index.html">
-                    <FaInstagram className="icons"/>
+                    <ion-icon name="logo-instagram"></ion-icon>
                     <img src="assets/logo.png" />
                 </a>
             </div>
@@ -23,10 +21,10 @@ export default function Navbar(){
                 <input autocapitalize="none" placeholder="Pesquisar" type="text" onChange={handleChange} value={input} />
             </div>
             <div className="topo-direito">
-                <IoPaperPlaneOutline className="icons"/>
-                <FaRegCompass className="icons"/>
-                <IoHeartOutline className="icons"/>
-                <IoPersonOutline className="icons"/>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+                <ion-icon name="heart-outline"></ion-icon>
+                <ion-icon name="compass-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon>
             </div>
         </div>
     </div>

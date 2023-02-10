@@ -1,14 +1,11 @@
-import { FaHome } from "react-icons/fa";
-import { IoAddCircleOutline, IoHeartOutline, IoPersonOutline, IoSearchOutline } from "react-icons/io5";
-
 export default function Rodape(){
     return (
         <div className="barra-inferior">
-            <FaHome className="icons"/>
-            <IoSearchOutline className="icons"/>
-            <IoAddCircleOutline className="icons"/>
-            <IoHeartOutline className="icons"/>
-            <IoPersonOutline className="icons"/>
+            <ion-icon name="home"></ion-icon>
+            <ion-icon name="search-outline"></ion-icon>
+            <ion-icon name="add-circle-outline"></ion-icon>
+            <ion-icon name="heart-outline"></ion-icon>
+            <ion-icon name="person-outline"></ion-icon>
         </div>
     );
 }

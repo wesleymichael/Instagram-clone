@@ -32,14 +32,14 @@ h2 {
   position: fixed;
   display: none;
 }
-.cabecalho-mobile .icons {
+.cabecalho-mobile ion-icon {
   font-size: 20px;
 }
 .cabecalho {
   border-bottom: 1px solid #dbdbdb;
   background-color: #ffffff;
 }
-.icons{
+ion-icon{
   color: #000000;
 }
 .topo {
@@ -55,8 +55,8 @@ h2 {
   display: flex;
   align-items: center;
 }
-.topo-esquerdo .icons {
-  font-size: 30px;
+.topo-esquerdo ion-icon {
+  font-size: 25px;
   padding-right: 10px;
   border-right: 1px solid #dbdbdb;
 }
@@ -79,12 +79,12 @@ h2 {
   width: 148px;
   align-items: center;
 }
-.topo-direito .icons {
+.topo-direito ion-icon {
   width: 30px;
   cursor: pointer;
   font-size: 20px;
 }
-.topo-direito .icons:hover {
+.topo-direito ion-icon:hover {
   font-size: 23px;
 }
 
@@ -132,7 +132,7 @@ h2 {
   background-image: url("./assets/stories_background.jpg");
   background-size: 66px;
 }
-.stories .icons {
+.stories ion-icon {
   font-size: 26px;
   position: absolute;
   right: 8px;
@@ -173,7 +173,7 @@ h2 {
 .user a > h1 {
   padding: 5px;
 }
-.user .icons {
+.user ion-icon {
   margin: 20px;
 }
 /*Div 2: postagem principal*/
@@ -196,16 +196,24 @@ h2 {
 .post > div:nth-child(3) {
   display: flex;
   justify-content: space-between;
-  padding-right: 10px;
+  align-items: center;
+  padding: 10px;
 }
-.post > div:nth-child(3) .icons {
-  padding-left: 10px;
-  padding-top: 12px;
-  font-size: 2em;
-  color: #000000;
+.post > div:nth-child(3) ion-icon {
+  font-size: 20px;
+  margin-right: 10px;
 }
-.post > div:nth-child(3) .icons:hover {
+.post > div:nth-child(3) ion-icon:hover {
   color: #8a8888;
+}
+.red{
+  color: red;
+}
+.red:hover{
+  color: red !important;
+}
+ion-icon{
+  visibility: visible;
 }
 /*Div 4: Espaço das curtidas*/
 .post > div:nth-child(4) {
@@ -256,7 +264,7 @@ h2 {
   padding: 15px 0;
   border-top: 1px solid #dbdbdb;
 }
-.comentar .icons {
+.comentar ion-icon {
   padding: 0 10px;
 }
 .comentar input {
@@ -297,9 +305,9 @@ h2 {
 .texto{
   display: flex;
 }
-.texto .icons{
+.texto ion-icon{
   padding: 0 0 5px 5px;
-  font-size: 25px;
+  font-size: 18px;
   cursor: pointer;
 }
 .sidebar h2 {
@@ -345,7 +353,7 @@ h2 {
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
 }
-.barra-inferior .icons {
+.barra-inferior ion-icon {
   font-size: 20px;
 }
 
@@ -389,7 +397,7 @@ h2 {
     overflow: auto;
   }
   ::-webkit-scrollbar,
-  .stories .icons,
+  .stories ion-icon,
   .cabecalho {
     display: none;
   }

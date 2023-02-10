@@ -1,23 +1,19 @@
-import { IoChevronForwardCircle } from "react-icons/io5";
-
+const stories = [
+    {nome: 'lotr', src:'assets/stories/LOTR.jpg'},
+    {nome: 'coda', src:'assets/stories/CODA.jfif'},
+    {nome: 'avengers', src: 'assets/stories/avengers.jpg'},
+    {nome: 'interestelar', src: 'assets/stories/interestelar.jpg'},
+    {nome: 'yourname', src: 'assets/stories/your-name.jfif'},
+    {nome: 'conjuring', src: 'assets/stories/the-conjuring.jpg'},
+    {nome: 'schindler', src: 'assets/stories/schindlers-list.jfif'},
+    {nome: 'inocentes', src: 'assets/stories/o-silencio-dos-inocentes.jpg'},
+    {nome: 'prejudice', src: 'assets/stories/pride-and-prejudice.jpg'},
+];
 
 export default function Stories(){
-    
-    const stories = [
-        {nome: 'lotr', src:'assets/stories/LOTR.jpg'},
-        {nome: 'coda', src:'assets/stories/CODA.jfif'},
-        {nome: 'avengers', src: 'assets/stories/avengers.jpg'},
-        {nome: 'interestelar', src: 'assets/stories/interestelar.jpg'},
-        {nome: 'yourname', src: 'assets/stories/your-name.jfif'},
-        {nome: 'conjuring', src: 'assets/stories/the-conjuring.jpg'},
-        {nome: 'schindler', src: 'assets/stories/schindlers-list.jfif'},
-        {nome: 'inocentes', src: 'assets/stories/o-silencio-dos-inocentes.jpg'},
-        {nome: 'prejudice', src: 'assets/stories/pride-and-prejudice.jpg'},
-    ];
-
     return (
         <div className="stories">
-            <IoChevronForwardCircle className="icons" />
+            <ion-icon name="chevron-forward-circle"></ion-icon>
             {stories.map( (story) => (
                 <a href="">
                     <div className="background-stories">

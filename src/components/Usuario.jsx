@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { IoPencilOutline } from "react-icons/io5";
 
 export default function Usuario(props){
     const [userName, setNewUserName] = useState(props.username);
@@ -30,7 +29,7 @@ export default function Usuario(props){
                 <a href={props.linkperfil}>
                     <h1>{userName}</h1>
                 </a>
-                <IoPencilOutline onClick={mudarUserName} className="icons"/>
+                <ion-icon name="pencil-outline" onClick={mudarUserName} ></ion-icon>
             </div>
         </div>
     );

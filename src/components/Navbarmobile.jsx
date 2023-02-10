@@ -1,14 +1,11 @@
-import { FaInstagram } from "react-icons/fa";
-import { IoPaperPlaneOutline } from "react-icons/io5";
-
 export default function Navbarmobile(){
     return (
     <div className="cabecalho-mobile">
         <a href="index.html">
-            <FaInstagram className="icons"/>
+            <ion-icon name="logo-instagram"></ion-icon>
         </a>
         <img src="assets/logo.png" width="103px" height="29px" />
-        <IoPaperPlaneOutline className="icons"/>
+        <ion-icon name="paper-plane-outline"></ion-icon>
     </div>
     );
 }
