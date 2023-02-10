@@ -22,14 +22,14 @@ export default function Usuario(props){
         <div className="perfil">
             <div>
                 <a href="#">
-                    <img src={imgPerfil} onClick={mudarImgPerfil} />
+                    <img src={imgPerfil} onClick={mudarImgPerfil} alt="props.username" data-test="profile-image" />
                 </a>
             </div>
             <div className="texto">
                 <a href={props.linkperfil}>
-                    <h1>{userName}</h1>
+                    <h1 data-test="name">{userName}</h1>
                 </a>
-                <ion-icon name="pencil-outline" onClick={mudarUserName} ></ion-icon>
+                <ion-icon name="pencil-outline" onClick={mudarUserName} data-test="edit-name"></ion-icon>
             </div>
         </div>
     );

@@ -24,32 +24,40 @@ export default function Post(props){
             setQuantLikes(quantLikes - 1);
         }
     }
+
+    function likeDoubleClick(){
+        if(iconlike === 'heart-outline'){
+            setIconlike('heart');
+            setClassesLike("red");
+            setQuantLikes(quantLikes + 1);
+        }
+    }
     return (
-        <div className="post">
+        <div className="post" data-test="post">
             <div className="user">
                 <a href={p.linkperfil}>
-                    <img src={p.user} />
+                    <img src={p.user} alt={p.nome}/>
                     <h1>{p.nome}</h1>
                 </a>
                 <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
             <div>
-                <img src={p.postagem} />
+                <img src={p.postagem} onDoubleClick={likeDoubleClick} data-test="post-image" />
             </div>
             <div>
                 <div>
-                    <ion-icon name={iconlike} class={classesLike} onClick={like}></ion-icon>
+                    <ion-icon name={iconlike} class={classesLike} onClick={like} data-test="like-post"></ion-icon>
                     <ion-icon name="chatbubble-outline"></ion-icon>
                     <ion-icon name="paper-plane-outline"></ion-icon>
                 </div>
-                <ion-icon name={iconSalvar} class="icons" onClick={salvar}></ion-icon>
+                <ion-icon name={iconSalvar} class="icons" onClick={salvar} data-test="save-post"></ion-icon>
             </div>
             <div>
                 <div>
                     <img src={p.likes.user} alt={p.likes.nome} />
                     <p>
                         Curtido por <span>{p.likes.nome}</span> e
-                        <span> outras {quantLikes.toLocaleString('pt-BR')} pessoas</span>
+                        <span> outras <span data-test="likes-number">{quantLikes.toLocaleString('pt-BR')}</span> pessoas</span>
                     </p>
                 </div>
             </div>

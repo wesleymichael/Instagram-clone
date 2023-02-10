@@ -8,4 +8,4 @@ function Index() {
     )
 }
 
-ReactDOM.render(Index(), document.querySelector("body"));
+ReactDOM.render(Index(), document.querySelector(".root"));

@@ -18,7 +18,7 @@ export default function Navbar(){
                 </a>
             </div>
             <div>
-                <input autocapitalize="none" placeholder="Pesquisar" type="text" onChange={handleChange} value={input} />
+                <input autoCapitalize="none" placeholder="Pesquisar" type="text" onChange={handleChange} value={input} />
             </div>
             <div className="topo-direito">
                 <ion-icon name="paper-plane-outline"></ion-icon>
