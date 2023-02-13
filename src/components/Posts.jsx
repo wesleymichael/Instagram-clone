@@ -1,4 +1,4 @@
-import listaposts from './listaPosts'
+import listaposts from './listaPosts';
 import Post from "./Post";
 
 export default function Posts(){    

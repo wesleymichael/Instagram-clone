@@ -41,6 +41,7 @@ h2 {
 }
 ion-icon{
   color: #000000;
+  visibility: visible;
 }
 .topo {
   box-sizing: border-box;
@@ -212,9 +213,6 @@ ion-icon{
 .red:hover{
   color: red !important;
 }
-ion-icon{
-  visibility: visible;
-}
 /*Div 4: Espaço das curtidas*/
 .post > div:nth-child(4) {
   padding: 10px 12px 5px 12px;
@@ -239,49 +237,6 @@ ion-icon{
 .post > div:nth-child(4) span {
   font-weight: 700;
 }
-/*.post > div:nth-child(4) h2 {
-  color: #9e9c9c;
-}
-.comentarios {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.botao {
-  background-color: #ffffff;
-  border: none;
-  font-size: 13px;
-  padding-right: 0;
-}
-.botao:hover {
-  color: #8a8888;
-}
-.comentar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  padding: 15px 0;
-  border-top: 1px solid #dbdbdb;
-}
-.comentar ion-icon {
-  padding: 0 10px;
-}
-.comentar input {
-  width: 85%;
-}
-.comentar button {
-  background-color: #ffffff;
-  border: none;
-  padding-right: 10px;
-  color: #b2dffc;
-  font-size: 15px;
-  cursor: pointer;
-}
-.comentar button:hover {
-  color: #0095f6;
-  transition: 0.3s;
-}*/
 
 /**** Conteúdo lateral ****/
 .sidebar {
